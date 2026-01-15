@@ -7,6 +7,45 @@
     .h2-text{
       color: red
     }
+    h6 {
+      font-size: 20px
+    }
+
+    .h6-text{
+      color: yellow
+    }
+
+    #h1-text {
+      font-size: 30px
+    }
+
+    div.first > a {
+      color: green
+      }
+
+    ul li {
+      color: green
+    }
+
+    input[type="text"] {
+      background-color: red
+    }
+
+    input[type="text"]:hover {
+      background-color: yellow
+    }
+
+    a:hover {
+      color: blue
+    }
+
+    li::marker {
+      color: red
+    }
+
+    ul > li:nth-child(2) {
+      color: blue
+    }
   </style>
 </head>
 <body>
@@ -15,12 +54,37 @@
     <li>playwright</li>
     <li>pytest</li>
   </ul>
-<div>
+<div class="first">
   <h1 id="h1-text">H1 text</h1>
   <h2 class="h2-text">H2 text</h2>
   <h2>H2 text</h2>
-  <h2 class="h2-text">H2 text</h2>
+  <h2 class="h2-text h6-text">H2 text</h2>
   <h1 class="h2-text">H1 text</h1>
+  <h6>Для текста</h6>
+  <a href="https://github.com/microsoft/playwright"> Ссылка </a>
+  <p>
+    <label>
+    <input type="text" placeholder="Введите ваше имя">
+    <input type="text" placeholder="Какой-то текст">
+    </label>
+  </p>
+  <div class="nth">
+    <p>1</p>
+    <p>2</p>
+    <h3>H3</h3>
+    <h5>H4</h5>
+    <p>5</p>
+  </div>
+</div>
+<div class="second">
+  <a href="https://github.com/microsoft/playwright"> Другая ссылка </a>
+  <h2 class="h2-text">H2 text</h2>
+   <ul>
+    <li>python</li>
+    <li>playwright</li>
+    <li>pytest</li>
+  </ul>
+
 </div>
 </body>
 </html>
