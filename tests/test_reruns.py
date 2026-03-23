@@ -13,6 +13,6 @@ class TestReruns:
     def test_rerun_2(self):
         assert random.choice([True, False])
 
-@pytest.mark.flaky(reruns=3, reruns_delay=2, condition=PLATFORM == "Windows")
+@pytest.mark.flaky(reruns=3, reruns_delay=2, condition= PLATFORM == "Windows")
 def test_rerun_3():
     assert random.choice([True, False])
